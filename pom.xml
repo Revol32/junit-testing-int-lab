@@ -9,15 +9,17 @@
     <version>1.0-SNAPSHOT</version>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
+        <linkXRef>false</linkXRef>
     </properties>
 
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-engine -->
+        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
+            <artifactId>junit-jupiter</artifactId>
             <version>5.8.0-M1</version>
             <scope>test</scope>
         </dependency>
@@ -35,11 +37,8 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M3</version>
-                <configuration>
-                    <argLine>-Dfile.encoding=UTF-8</argLine>
-                </configuration>
             </plugin>
         </plugins>
     </build>
-    
+
 </project>
